@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhythm House</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+<style>
+    /* .header {
+         border: 3px solid rgb(86, 107, 111, 1);
+        height: 1cm; 
+    } */
+
+    body {
+        font-family: 'Raleway', sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background-image: url(https://cdn.pixabay.com/photo/2016/12/17/16/59/guitar-1913837__340.jpg)
+    }
+
+    /* header{
+        
+    } */
+    .left {
+        /* border: 2px red solid; */
+        display: inline-block;
+        position: absolute;
+        left: 0px;
+    }
+
+    .mid {
+        display: block;
+        width: 33%;
+        margin: 12px auto;
+        /* border: 2px solid yellow; */
+        /* height: 1cm; */
+
+    }
+
+    .right {
+        position: absolute;
+        right: 2px;
+        top: 10px;
+        /* border: 2px solid green; */
+        display: inline-block;
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 30px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: grey;
+        /* text-decoration: underline; */
+    }
+
+    .left img {
+        width: 80px;
+    }
+
+    .left div {
+        font-style: italic;
+    }
+
+    .btn {
+        font-family: 'Raleway', sans-serif;
+        margin: 4px 4px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(84, 81, 81);
+    }
+
+    .container {
+        border: 2px orange solid;
+        margin: 75px 105px;
+        padding: 70px 78px;
+        border-radius: 35px;
+        width: 30%;
+    }
+
+    .form-group input {
+        display: block;
+        width: 68%;
+        padding: 2px;
+        margin: 5px auto;
+        border: 3px solid rgb(48, 142, 152);
+        border-radius: 15px;
+        font-size: 15px;
+    }
+
+    .container h3 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 70px;
+        margin: 6px 67px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left for logo -->
+        <div class="left">
+            <img src="https://cdn.pixabay.com/photo/2019/07/18/01/44/electric-guitar-4345340__340.jpg" alt="">
+            <div>Rhythm House</div>
+        </div>
+        <!-- mid for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li> 
+                <li><a href="#">Guitar tabs</a></li>
+                <li><a href="https://instagram.com/beingkunalistic?igshid=YmMyMTA2M2Y=" target="_blank">About us</a>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <!-- right for somethin -->
+        <div class="right">
+            <button class="btn">Enroll now!</button><br>
+            <button class="btn">E-mail</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Fill the form given below to enrol for the 30 days crash course.</h2>
+        <form action="noAction.php">
+            <div class="form-group">
+                <input type="text" name="UserName" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="UserPhn" placeholder="Enter phone number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="UserID" placeholder="Enter Email ID">
+            </div>
+            <div class="form-group">
+                <label for="Time Slots">Time slots:
+                    <select name="Time Slots" id="timeSelection">
+                        <option value="11:00-12:00 am">11:00-12:00</option>
+                        <option value="12:00-13:00">12:00-13:00</option>
+                        <option value="16:00-17:00">16:00:17:00</option>
+                        <option value="17:00-18:00">17:00-18:00</option>
+                    </select>
+                </label>
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    <!-- <script>
+        function errorFunction(){
+            if(UserName==null || UserPhn==null || UserId==null){
+                alert("Please enter the required details.");
+            }
+            else{
+                
+            }
+        }
+    </script> -->
+</body>
+
+</html>
